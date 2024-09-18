@@ -1,0 +1,66 @@
+$background: #F6F5F6;
+$purple-100: #DBD1FC;
+$purple-500: #7551DC;
+$yellow-100: #F9EEE2;
+$yellow-500: #FFCC6A;
+$white: #FFF;
+$black: #121212;
+$spacing-500: 40px;
+$spacing-400: 32px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-100: 8px;
+
+@font-face {
+    font-family: DM-Sans-Medium;
+    src: url('./assets/fonts/static/DMSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: DM-Sans-Regular;
+    src: url('./assets/fonts/static/DMSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: DM-Sans-Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $background;
+}
+
+.text-preset-1 {
+    font-family: DM-Sans-Medium;
+    font-size: 62px;
+    line-height: 93.5%;
+    letter-spacing: -3px;
+}
+
+.text-preset-2 {
+    font-family: DM-Sans-Medium;
+    font-size: 40px;
+    line-height: 90%;
+    letter-spacing: -2px;
+}
+
+.text-preset-3 {
+    font-family: DM-Sans-Medium;
+    font-size: 32px;
+    line-height: 87.5%;
+    letter-spacing: -2px;
+}
+
+
+.text-preset-4 {
+    font-family: DM-Sans-Regular;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: 0px;
+}

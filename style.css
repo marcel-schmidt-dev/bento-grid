@@ -1,54 +1,172 @@
-:root {
-    --purple-100: #DBD1FC;
-    --purple-500: #7551DC;
-    --yellow-100: #F9EEE2;
-    --yellow-500: #FFCC6A;
-    --white: #FFF;
-    --black: #121212;
-    --spacing-500: 40px;
-    --spacing-400: 32px;
-    --spacing-300: 24px;
-    --spacing-200: 16px;
-    --spacing-100: 8px;
-}
-
 @font-face {
-    font-family: DM-Sans-Medium;
-    src: url('./assets/fonts/static/DMSans-Medium.ttf');
+  font-family: DM-Sans-Medium;
+  src: url("./assets/fonts/static/DMSans-Medium.ttf");
 }
-
 @font-face {
-    font-family: DM-Sans-Regular;
-    src: url('./assets/fonts/static/DMSans-Regular.ttf');
+  font-family: DM-Sans-Regular;
+  src: url("./assets/fonts/static/DMSans-Regular.ttf");
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: DM-Sans-Regular;
+  font-family: DM-Sans-Regular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F6F5F6;
 }
 
 .text-preset-1 {
-    font-family: DM-Sans-Medium;
-    font-size: 62px;
-    line-height: 93.5%;
-    letter-spacing: -3px;
+  font-family: DM-Sans-Medium;
+  font-size: 62px;
+  line-height: 93.5%;
+  letter-spacing: -3px;
 }
 
 .text-preset-2 {
-    font-family: DM-Sans-Medium;
-    font-size: 40px;
-    line-height: 90%;
-    letter-spacing: -2px;
+  font-family: DM-Sans-Medium;
+  font-size: 40px;
+  line-height: 90%;
+  letter-spacing: -2px;
 }
 
 .text-preset-3 {
-    font-family: DM-Sans-Medium;
-    font-size: 32px;
-    line-height: 87.5%;
-    letter-spacing: -2px;
+  font-family: DM-Sans-Medium;
+  font-size: 32px;
+  line-height: 87.5%;
+  letter-spacing: -2px;
 }
+
+.text-preset-4 {
+  font-family: DM-Sans-Regular;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: 0px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 32px;
+  max-width: 1120px;
+}
+.grid-wrapper > div {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-wrapper > div:nth-child(1) {
+  background-color: #F9EEE2;
+  padding: 32px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  justify-content: center;
+}
+.grid-wrapper > div:nth-child(1) span {
+  margin-bottom: 24px;
+}
+.grid-wrapper > div:nth-child(1) span i {
+  color: #7551DC;
+}
+.grid-wrapper > div:nth-child(1) img {
+  max-width: 190px;
+  display: block;
+}
+.grid-wrapper > div:nth-child(2) {
+  background-color: #7551DC;
+  padding: 32px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+.grid-wrapper > div:nth-child(2) span {
+  text-align: center;
+}
+.grid-wrapper > div:nth-child(2) span:not(.text-preset-4) {
+  margin-bottom: 24px;
+}
+.grid-wrapper > div:nth-child(2) span span {
+  color: #FFCC6A;
+}
+.grid-wrapper > div:nth-child(2) img {
+  max-width: 192px;
+  margin-bottom: 8px;
+}
+.grid-wrapper > div:nth-child(3) {
+  background-color: #DBD1FC;
+  padding: 50px 32px;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  max-width: 256px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.grid-wrapper > div:nth-child(3) img {
+  margin-bottom: 16px;
+  flex: 1;
+  max-height: 318px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  display: block;
+  margin: 24px 0;
+}
+.grid-wrapper > div:nth-child(4) {
+  background-color: #FFCC6A;
+  padding: 24px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.grid-wrapper > div:nth-child(5) {
+  background-color: #FFF;
+  padding: 24px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+.grid-wrapper > div:nth-child(6) {
+  background-color: #FFCC6A;
+  padding: 24px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+.grid-wrapper > div:nth-child(7) {
+  background-color: #FFF;
+  padding: 24px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 11;
+}
+.grid-wrapper > div:nth-child(8) {
+  background-color: #7551DC;
+  padding: 24px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 11;
+}/*# sourceMappingURL=style.css.map */
