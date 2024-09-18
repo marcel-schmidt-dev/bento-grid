@@ -99,6 +99,13 @@
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+            max-width: 220px;
+        }
     }
 
     >div:nth-child(5) {
